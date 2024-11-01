@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Adding inline CSS for the changes */
+        .hello {
+            color: green; /* Make 'Hello!' text green */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Green triangles -->
+    <div class="triangle-pattern"></div> 
+
+    <div class="contact-section">
+        <h2>Contact Us</h2>
+        <p>Let us know your queries, feedbacks and enquiries. We are here to support you 24/7.</p>
+        
+        <div class="contact-info">
+            <div class="info-item">
+                <img src="phone-icon.png" alt="Phone" class="icon">
+                <p>Give us a call<br><strong>+91 9736097320</strong></p>
+            </div>
+            <hr class="horizontal-line"> <!-- Horizontal line between phone and email -->
+            <div class="info-item">
+                <img src="email-icon.png" alt="Email" class="icon">
+                <p>Write to us<br><strong>cs@guvi.in</strong></p>
+            </div>
+            <hr class="horizontal-line"> <!-- Horizontal line between email and first location -->
+            <div class="info-item">
+                <img src="location-icon.png" alt="Location" class="icon">
+                <p>Visit us in Chennai @<br><strong>IITM Research park, Phase 2, Module #9, 3rd Floor, D Block, Kanagam Rd, Tharamani, Chennai, Tamil Nadu, 600113</strong></p>
+            </div>
+            <hr class="horizontal-line"> <!-- Horizontal line between Chennai and Noida -->
+            <div class="info-item">
+                <p>Visit us in Noida @<br><strong>A11, HCL Corporation Pvt. Ltd, Block A, Sector 3, Noida, Uttar Pradesh, 201307</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-section">
+        <h2>Say <span class="hello">Hello!</span></h2>
+        <p>Feel free to stop by and say hi!</p>
+        <form>
+            <label for="name">Name <span class="required">*</span></label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail id <span class="required">*</span></label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="contact-number">Contact Number <span class="required">*</span></label>
+            <input type="tel" id="contact-number" name="contact-number" required>
+
+            <label for="subject">Subject <span class="required">*</span></label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Message <span class="required">*</span></label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

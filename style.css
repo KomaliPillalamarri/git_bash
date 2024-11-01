@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white; /* Set background to white */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    background-color: white; /* Ensure white background for container */
+    padding: 20px;
+}
+
+.contact-section, .form-section {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Move the contact section down by 60px */
+.contact-section {
+    margin-left: 80px;
+    margin-top: 60px; /* Adjusting to move down 60 pixels */
+}
+
+/* Line Spacing Adjustments */
+h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.contact-info {
+    margin-top: 20px;
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+}
+
+.info-item {
+    display: flex;
+    align-items: center; /* Align icons and text vertically */
+    margin-bottom: 35px; /* Increased spacing between each info item */
+    color: #333;
+    line-height: 1.6;
+}
+
+.info-item img.icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 20px; /* Adjust space between icon and text */
+}
+
+.info-item p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.info-item p strong {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Aligning second location text with the first */
+.info-item.no-icon {
+    margin-left: 52px; /* Align with the first location text */
+}
+
+/* Horizontal Line Style */
+.horizontal-line {
+    border: none; /* Remove default border */
+    height: 1px; /* Height of the line */
+    background-color: #ccc; /* Color of the line */
+    margin: 0; /* Remove margins */
+    width: 100%; /* Full width */
+    margin-bottom: 35px; /* Space after each line to match the gap between info items */
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    display: block;
+    line-height: 1.5;
+}
+
+.required {
+    color: red;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+/* Adding stronger box-shadow to the right-side block for elevation */
+.form-section {
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhance shadow for a distinct elevated effect */
+    border-radius: 8px;
+    background-color: white; /* Ensure the form block stays white */
+    margin-left: 30px; /* Add some spacing from the left section */
+}
+
+/* Green triangle background placed on left side */
+.triangle-pattern {
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    width: 100px;
+    height: 100px;
+    background-image: url('green-triangle.png');
+    background-size: cover;
+    opacity: 0.7;
+}
+
+.triangle-pattern-bottom {
+    position: absolute;
+    bottom: 50px;
+    left: 10px;
+    width: 100px;
+    height: 100px;
+    background-image: url('file:///C:/CHUBB/Assignments/ASSIGNMENT_5/green-triangle.png');
+    background-size: cover;
+    opacity: 0.7;
+}
